@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #fab1a0, #74b9ff);
+    min-height: 100vh;
+    padding: 30px 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #2d3436;
+}
+
+.add-course-btn {
+    background-color: #00cec9;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-course-btn:hover {
+    background-color: #00b894;
+}
+
+.course-list h2 {
+    font-size: 20px;
+    color: #2d3436;
+    margin-bottom: 20px;
+}
+
+.course-card {
+    background-color: #f1f2f6;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.course-card h3 {
+    font-size: 18px;
+    color: #2d3436;
+}
+
+.course-card p {
+    font-size: 14px;
+    color: #636e72;
+}
+
+.class-code {
+    font-weight: bold;
+    color: #0984e3;
+}
+
+.access-homework-btn {
+    background-color: #4834d4;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.access-homework-btn:hover {
+    background-color: #0652dd;
+}
+
+/* Formulaire modal */
+.course-form-container {
+    display: none;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 500px;
+}
+
+.course-form-container h2 {
+    color: #2d3436;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.course-form-container input,
+.course-form-container textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #dfe6e9;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.course-form-container textarea {
+    resize: vertical;
+}
+
+.course-form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00cec9;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.course-form-container button:hover {
+    background-color: #00b894;
+}
